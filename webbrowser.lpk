@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="WebBrowser"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CompilerMessages>
+          <IgnoredMessages idx5024="True" idx4055="True"/>
+        </CompilerMessages>
+      </Other>
+    </CompilerOptions>
+    <Files Count="8">
+      <Item1>
+        <Filename Value="webbrowser.inc"/>
+        <Type Value="Include"/>
+      </Item1>
+      <Item2>
+        <Filename Value="websystem.pas"/>
+        <UnitName Value="WebSystem"/>
+      </Item2>
+      <Item3>
+        <Filename Value="webbrowserintf.pas"/>
+        <UnitName Value="WebBrowserIntf"/>
+      </Item3>
+      <Item4>
+        <Filename Value="webbrowserctrls.pas"/>
+        <UnitName Value="WebBrowserCtrls"/>
+      </Item4>
+      <Item5>
+        <Filename Value="webbrowsergtk2.pas"/>
+        <UnitName Value="WebBrowserGtk2"/>
+      </Item5>
+      <Item6>
+        <Filename Value="webbrowsergtk3.pas"/>
+        <UnitName Value="WebBrowserGtk3"/>
+      </Item6>
+      <Item7>
+        <Filename Value="webkitgtk.pas"/>
+        <UnitName Value="WebkitGtk"/>
+      </Item7>
+      <Item8>
+        <Filename Value="webbrowserextras.pas"/>
+        <UnitName Value="WebBrowserExtras"/>
+      </Item8>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

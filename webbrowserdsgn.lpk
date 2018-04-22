@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="WebBrowserDsgn"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Files Count="3">
+      <Item1>
+        <Filename Value="webbrowserregister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="webbrowserregister"/>
+      </Item1>
+      <Item2>
+        <Filename Value="webbrowserdlg.pas"/>
+        <UnitName Value="webbrowserdlg"/>
+      </Item2>
+      <Item3>
+        <Filename Value="webbrowsereditors.pas"/>
+        <UnitName Value="webbrowsereditors"/>
+      </Item3>
+    </Files>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="WebBrowser"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
