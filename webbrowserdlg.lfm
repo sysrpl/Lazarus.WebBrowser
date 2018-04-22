@@ -1,0 +1,77 @@
+object WebBrowserDialog: TWebBrowserDialog
+  Left = 1040
+  Height = 432
+  Top = 250
+  Width = 571
+  BorderStyle = bsDialog
+  Caption = 'Web Browser Editor'
+  ClientHeight = 432
+  ClientWidth = 571
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.9.0.0'
+  object CaptionLabel: TLabel
+    Left = 8
+    Height = 14
+    Top = 8
+    Width = 287
+    Caption = 'Set the contents of the web browser control to:'
+    ParentColor = False
+  end
+  object UriRadio: TRadioButton
+    Left = 16
+    Height = 23
+    Top = 32
+    Width = 248
+    Caption = 'The resources found at the uri below'
+    TabOrder = 0
+  end
+  object HtmlRadio: TRadioButton
+    Left = 16
+    Height = 23
+    Top = 96
+    Width = 211
+    Caption = 'The html in the edit box below'
+    Checked = True
+    TabOrder = 2
+    TabStop = True
+  end
+  object UriEdit: TEdit
+    Left = 40
+    Height = 26
+    Top = 56
+    Width = 472
+    TabOrder = 1
+    Text = 'UriEdit'
+  end
+  object HtmlMemo: TMemo
+    Left = 40
+    Height = 200
+    Top = 120
+    Width = 472
+    Lines.Strings = (
+      'HtmlMemo'
+    )
+    ScrollBars = ssAutoBoth
+    TabOrder = 3
+  end
+  object OKButton: TButton
+    Left = 360
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 4
+  end
+  object CancelButton: TButton
+    Left = 437
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 5
+  end
+end
